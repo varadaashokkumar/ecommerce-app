@@ -1,0 +1,72 @@
+🌐 Example Project: E-Commerce Platform
+
+Repo name: ecommerce-app
+
+Default branch: develop
+
+Task assigned in Jira: ECOM-102 | Add Product Search API
+
+🔹 Step-by-Step Workflow
+1. Clone Repo (only once)
+git clone https://github.com/org-team/ecommerce-app.git
+cd ecommerce-app
+
+2. Switch to develop branch and update
+git checkout develop
+git pull origin develop
+
+3. Create a Feature Branch
+
+Branch naming convention in many companies is:
+
+feature/<Jira-ticket>-<short-description>
+
+bugfix/<Jira-ticket>-<short-description>
+
+hotfix/<short-description>
+
+Example:
+
+git checkout -b feature/ECOM-102-product-search-api
+
+4. Make Changes
+
+(Say, add new API code in backend/routes/product.js)
+
+5. Stage and Commit
+git add backend/routes/product.js
+git commit -m "ECOM-102: Added Product Search API in product routes"
+
+6. Push the Branch
+git push origin feature/ECOM-102-product-search-api
+
+7. Create Pull Request
+
+Go to GitHub → ecommerce-app repo
+
+Select branch: feature/ECOM-102-product-search-api
+
+Compare with: develop
+
+Title:
+ECOM-102: Implement Product Search API
+
+Description:
+
+Jira Ticket: ECOM-102
+- Added GET /products/search API
+- Supports filtering by name and category
+- Added unit tests in product.test.js
+
+
+Assign reviewers (usually team lead + peers)
+
+Submit PR ✅
+
+🔹 How it looks in a real office
+
+Branch names always tied to Jira/issue tracker.
+
+Commit messages must reference the ticket ID.
+
+PR descriptions include ticket details, code changes, and sometimes screenshots (for UI).
